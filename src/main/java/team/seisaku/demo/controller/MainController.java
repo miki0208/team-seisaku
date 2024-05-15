@@ -11,6 +11,6 @@ public class MainController
 	@GetMapping("/")
     public String index(Model model) {
 //      model("message", "こんにちは");
-      return "hello";
+      return "index";
     }
 	  }

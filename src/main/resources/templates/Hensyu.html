@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>編集</title>
+</head>
+<body>
+    <h2>Edit Student</h2>
+    <form action="#" th:action="@{/update}" th:object="${student}" method="post">
+        <input type="hidden" th:field="*{id}">
+        <label for="no">学生番号:</label>
+        <input type="text" th:field="*{no}" id="no">
+        <label for="name">名前:</label>
+        <input type="text" th:field="*{name}" id="name">
+        <label for="entYear">入学年度:</label>
+        <input type="text" th:field="*{entYear}" id="entYear">
+        <label for="classNum">クラス:</label>
+        <input type="text" th:field="*{classNum}" id="classNum">
+        <label for="isAttend">在校中:</label>
+        <input type="checkbox" th:field="*{isAttend}" id="isAttend">
+        <button type="submit">変更</button>
+    </form>
+</body>
+</html>

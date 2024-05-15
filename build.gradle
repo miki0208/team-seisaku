@@ -51,7 +51,7 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 flyway {
-    url = 'jdbc:mysql://127.0.0.1:3306/mysqlmiki'
+    url = 'jdbc:mysql://127.0.0.1:3306/mysql_miki'
     user = 'root'
     password = ''
 }
